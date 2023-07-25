@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.section-a {
+  background-color: #ccc;
+}
+
+.section-b {
+  background-color: #ccc;
+  clip-path: circle(3.7% at 49% 50%);
+  transition: clip-path 10s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.section-b.reveal {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  z-index: 2;
+}
